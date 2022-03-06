@@ -19,5 +19,7 @@ python manage.py runserver 0.0.0.0:8765
 ```
 
 【提示】
+
 recognize/xunfei_speech_rec.py：修改讯飞appid和secret_key
+
 user/views.py：修改小程序appid和secret_key
