@@ -1,0 +1,64 @@
+/**index.wxss**/
+.page{
+  /*border:#000 solid 2rpx; */  /* 开发时可以加边框调整样式 */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  /*border:#000 solid 2rpx;*/
+  font-size: 120%; 
+  margin-top: 30px;
+}
+
+.top_img{
+  border: #cccccc solid 3rpx;
+  width: 75%;
+  height: 175px;
+  margin-top: 30px;
+}
+
+.change_img{
+  /*border:#000 solid 2rpx;*/
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  color: #666666;
+}
+.change_img image{
+  margin-left: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.audio_control{
+  margin-top: 20px;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.bottom{
+  border: #cccccc solid 3rpx;
+  width: 70%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20rpx;
+}
+
+.audio_play{
+  margin-left: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.get_recognize{
+  background-color: #00CD00;
+  color: #ffffff;
+}
+

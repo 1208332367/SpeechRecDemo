@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="title">请说出图片展示的内容</view>
+  <image class='top_img' src="{{imgInfo.img_URL}}" mode="aspectFit"></image>
+  <view class='change_img'>
+    <view>更换图片</view>
+    <image src="../../images/index/refresh.png" bindtap="changeImage"></image>
+  </view>
+  
+  <image wx:if="{{start_record}}" class="audio_control" src="../../images/index/start_record.png" bindtap="startRecord"></image>
+  <image class="audio_control" wx:else src="../../images/index/stop_record.png"  bindtap="stopRecord"></image>
+
+  <view wx:if="{{content != ''}}" class="bottom">
+    <view style="display: flex;">
+      <view>识别结果：{{content == ''? '无': content}}</view>
+      <image wx:if="{{content != ''}}" class="audio_play" wx:if="{{speechInfo.speech_URL != ''}}" src="../../images/index/play_audio.png" bindtap="playAudio"></image>
+    </view>
+    <view>判定结果：{{judge}}</view>
+  </view>
+  <button style="margin-top: 40px;" wx:else class="get_recognize" bindtap="uploadSpeech">识别音频</button>
+  
+  
+</view>
